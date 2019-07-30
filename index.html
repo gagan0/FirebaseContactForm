@@ -27,35 +27,39 @@
             </div>
             <div class="contact">
                 <h3>Email Us</h3>
+                <div class="alert">Your message has been sent!</div>
 
-                <form>
+                <form id="formContactUs">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="txtName">
+                        <input type="text" name="txtName" id="txtName" required>
                     </p>
                     <p>
                         <label>Company</label>
-                        <input type="text" name="txtCompany">
+                        <input type="text" name="txtCompany" id="txtCompany">
                     </p>
                     <p>
                         <label>Email Address</label>
-                        <input type="email" name="txtEmail">
+                        <input type="email" name="txtEmail" id="txtEmail" required>
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="txtPhoneNumber">
+                        <input type="text" name="txtPhoneNumber" id="txtPhoneNumber">
                     </p>
                     <p class="full">
                         <label>Message</label>
-                        <textarea rows="5" name="txtMessage"></textarea>
+                        <textarea rows="5" name="txtMessage" id="txtMessage"></textarea>
                     </p>
                     <p class="full">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

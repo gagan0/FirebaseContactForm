@@ -105,8 +105,17 @@ ul
     transition: background-color 2s ease-out;
 }
 
-/* LARGE SCREENS    */
+.alert
+{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
 
+/* LARGE SCREENS    */
 @media(min-width: 700px)
 {
     .wrapper
